@@ -103,7 +103,7 @@ authorize the CLI, click the _Authorize_ button and head back to the terminal.
 
 __Note:__ Other authentication methods include using your username and password credentials or obtaining an [authentication token][token] from the dashboard. Authentication tokens come in two types, API tokens, and JSON Web Token (JWT) session tokens. While API tokens do not expire, JWT session tokens do after 7 days.
 
-After logging in, test out the {{ $names.company.lower }} CLI by running the `{{ $names.company.lower }} apps` command, which should return information about the application you created in the previous step. Take a note of the `APP NAME` as you'll need this in the next step to push the code to all devices in that application.
+After logging in, test out {{ $names.cli.lower }} by running the `{{ $names.company.lower }} apps` command, which should return information about the application you created in the previous step. Take a note of the `APP NAME` as you'll need this in the next step to push the code to all devices in that application.
 
 ```shell
 $ {{ $names.company.lower }} apps
@@ -111,7 +111,7 @@ ID    APP NAME   DEVICE TYPE          ONLINE DEVICES DEVICE COUNT
 98264 First-App  {{ $device.name }}   0              0
 ```
 
-__Note:__ See all the commands available with {{ $names.company.lower }} CLI by running `{{ $names.company.lower }} help`
+__Note:__ See all the commands available with {{ $names.cli.lower }} by running `{{ $names.company.lower }} help`
 
 <!-- This is language specific -->
 {{import "getting-started/deployingCode"}}

@@ -29,7 +29,7 @@ First, the device connects to the network and performs its early provisioning, w
 
 ## Code deployment
 
-`{{ $names.company.lower }} push` is the recommended method for deployment and [development](/learn/develop/local-mode/) on the {{ $names.cloud.lower }} platform. To use `{{ $names.company.lower }} push` you need to first [install the {{ $names.company.lower }} CLI](/reference/cli/#install-the-cli) and ensure you are logged in to your account with `{{ $names.company.lower }} login`.
+`{{ $names.company.lower }} push` is the recommended method for deployment and [development](/learn/develop/local-mode/) on the {{ $names.cloud.lower }} platform. To use `{{ $names.company.lower }} push` you need to first [install {{ $names.cli.lower }}][cli-install] and ensure you are logged in to your account with `{{ $names.company.lower }} login`.
 
 ![How balena push works](/img/common/deployment/balena-push.jpg)
 
@@ -61,6 +61,7 @@ Much of the device, service, and application information provided by the dashboa
 
 [os-docs]:/reference/OS/overview/2.x/
 [build]:/learn/deploy/deployment
+[cli-install]:{{ $links.githubCli }}/blob/master/INSTALL.md
 [dashboard]:{{ $links.dashboardUrl }}/
 [getting-started]:/learn/getting-started
 [os]:{{ $links.osSiteUrl }}

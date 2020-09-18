@@ -56,7 +56,7 @@ You can override the value of a fleet variable by clicking *override* in the far
 
 ## Managing with the CLI & SDK
 
-The {{ $names.company.lower }} CLI and SDKs all include methods to easily read, add or update environment and service variables. Consult the appropriate reference for code examples.
+{{ $names.cli.upper }} and the {{ $names.company.lower }} SDKs all include methods to easily read, add or update environment and service variables. Consult the appropriate reference for code examples.
 
 * [CLI environment reference](/tools/cli/#envs)
 * [Node.js SDK environment reference](/reference/sdk/node-sdk/#balena.models.application.envVar)

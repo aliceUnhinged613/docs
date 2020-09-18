@@ -11,7 +11,7 @@ Feedback on the masterclasses are welcome and should be given by creating an iss
 
 Currently, the following masterclasses are available:
 
-* [{{ $names.cli.upper }} masterclass](/learn/more/masterclasses/cli-masterclass/) - a guide to getting started with the {{ $names.cli.lower }}.
+* [{{ $names.cli.upper }} masterclass](/learn/more/masterclasses/cli-masterclass/) - a guide to getting started with {{ $names.cli.lower }}.
 * [{{ $names.cli.upper }} advanced masterclass](/learn/more/masterclasses/advanced-cli/) - a guide to the advanced features available in {{ $names.cli.lower }}.
 * [{{ $names.os.upper }} masterclass](/learn/more/masterclasses/host-os-masterclass/) - an introduction to {{ $names.os.lower }}.
 * [{{ $names.company.upper }} fleet management masterclass](/learn/more/masterclasses/fleet-management/) - a guide to managing an application fleet with {{ $names.company.lower }}.

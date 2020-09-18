@@ -14,8 +14,8 @@ DOMAIN_ENGINE = process.env.DOMAIN_ENGINE || 'balena.io/engine'
 FORUMS_DOMAIN = process.env.DOMAIN_FORUMS || 'https://forums.balena.io'
 BASE_IMAGES_LIB = process.env.BASE_IMAGES_LIB || 'balenalib'
 BASE_IMAGES_CORE = process.env.BASE_IMAGES_CORE || 'balena'
-CLI_LOWER = process.env.CLI_LOWER || 'balena CLI'
-CLI_UPPER = (CLI_LOWER.charAt(0).toUpperCase() + CLI_LOWER.slice(1)) || 'Balena CLI'
+CLI_LOWER = process.env.CLI_LOWER || 'balenaCLI'
+CLI_UPPER = (CLI_LOWER.charAt(0).toUpperCase() + CLI_LOWER.slice(1)) || 'BalenaCLI'
 
 module.exports =
   company:

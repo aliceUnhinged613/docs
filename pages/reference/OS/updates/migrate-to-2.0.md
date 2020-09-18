@@ -25,7 +25,7 @@ Other smaller, but important changes to note are the following:
 
 - If you use {{ $names.company.lower }} base images, you may notice that the hostname changes from `<device_type>-<short_uuid>` to just `<short_uuid>`, however, if you update to the latest version of your respective base image, the hostname will remain `<device_type>-<short_uuid>`. If you are interested in how the hostname is generated checkout this [bit of code in **GitHub**]({{ $links.githubMain }}-library/base-images/pull/256/files#diff-f1f5c90c015964785192b51de0187522R9). It's also important to know if you set a customized hostname in your config.json, this hostname will also be reflected as part of your container hostname.
 
-- If you rely on some {{ $names.company.lower }} CLI functionality e.g.: `{{ $names.company.short }} sync` or `{{ $names.company.short }} ssh`, you will need update to at least version 5.7.0 to work with 2.x devices.
+- If you rely on some {{ $names.cli.lower }} functionality e.g.: `{{ $names.company.short }} sync` or `{{ $names.company.short }} ssh`, you will need update to at least version 5.7.0 to work with 2.x devices.
 
 - It's also important to note that the {{ $names.os.lower }} versioning scheme has changed a bit in the 2.x series and any code that relies on parsing the OS version should take care in these cases. An example of the new scheme is `balenaOS 2.26.0-beta0+rev1 (prod)` and you can find more detail on how the versioning works [here]({{ $links.githubOS }}/meta-balena#versioning).
 
