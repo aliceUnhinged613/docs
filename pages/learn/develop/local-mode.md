@@ -13,7 +13,7 @@ To use local mode on a device:
 
 - The device must be running {{ $names.os.lower }} v2.29.0 or higher.
 - The device must be running a [development][development] variant of the OS.
-- You must have the [{{ $names.company.lower }} CLI][cli] installed on your development machine.
+- You must have [{{ $names.cli.lower }}][cli] installed on your development machine.
 - Local mode must be enabled through the {{ $names.cloud.lower }} dashboard. You can enable it from either the *Actions* menu of the device dashboard or click to expand the arrow located on the device dashboard and select *Enable Local Mode*.
 
 ![Enable local mode](/img/local-mode/enable-local-mode.png)
@@ -30,7 +30,7 @@ To use local mode on a device:
 
 ## Scan the network and find your device
 
-Before you can get your application running on your device in local mode, you have to find your device. You can find the `short-uuid` and local IP address of the device from the device dashboard or by scanning the network. To perform a scan, login to the {{ $names.company.lower }} CLI and use `{{ $names.company.short }} scan` to find any local {{ $names.os.lower }} devices. All {{ $names.os.lower }} devices advertise themselves on the network using [Avahi][avahi]. The names take the form `<short-uuid>.local`, where the `short-uuid` is the UUID you see on your device dashboard.
+Before you can get your application running on your device in local mode, you have to find your device. You can find the `short-uuid` and local IP address of the device from the device dashboard or by scanning the network. To perform a scan, login to {{ $names.cli.lower }} and use `{{ $names.company.short }} scan` to find any local {{ $names.os.lower }} devices. All {{ $names.os.lower }} devices advertise themselves on the network using [Avahi][avahi]. The names take the form `<short-uuid>.local`, where the `short-uuid` is the UUID you see on your device dashboard.
 
 __Note:__ You may need administrator privileges to run `{{ $names.company.short }} scan` as it requires access to all network interfaces.
 
@@ -66,7 +66,7 @@ Reporting scan results
 
 ## Push over a new project
 
-When local mode has been activated, {{ $names.company.lower }} CLI can push code directly to the local device instead of going via the {{ $names.cloud.lower }} builders. As code is built on the device and then executed, this can significantly speed up development when requiring frequent changes. To do this, we use the `{{ $names.company.lower }} push` command providing either the local IP address or `<short-uuid>.local`, obtained from the preceding `{{ $names.company.short }} scan` command.
+When local mode has been activated, {{ $names.cli.lower }} can push code directly to the local device instead of going via the {{ $names.cloud.lower }} builders. As code is built on the device and then executed, this can significantly speed up development when requiring frequent changes. To do this, we use the `{{ $names.company.lower }} push` command providing either the local IP address or `<short-uuid>.local`, obtained from the preceding `{{ $names.company.short }} scan` command.
 
 __Note:__ By default `{{ $names.company.short }} push` will build from the current working directory, but it is also possible to specify the project directory via the `--source` option.
 
@@ -161,7 +161,7 @@ __Note:__ You can disable Livepush by passing the `--nolive` option to `{{ $name
 
 ### Local mode logs
 
-By default, when pushing code to a device in local mode using the {{ $names.company.lower }} CLI, the logs will be output to the console. You can prevent this by passing the `--detached` (`-d`) option to the `{{ $names.company.short }} push` command (you may also detach the console at any time by pressing `Ctrl-C`).
+By default, when pushing code to a device in local mode using {{ $names.cli.lower }}, the logs will be output to the console. You can prevent this by passing the `--detached` (`-d`) option to the `{{ $names.company.short }} push` command (you may also detach the console at any time by pressing `Ctrl-C`).
 
 ```bash
 {{ $names.company.short }} push 63ec46c.local --detached

@@ -9,13 +9,13 @@ On {{$names.cloud.lower}}, when we deploy code to a fleet of devices, these devi
 
 There are 3 ways to create and deploy a release, namely [{{$names.company.lower}} push](#balena-push), [{{$names.company.lower}} deploy](#balena-build--deploy) and [git push](#git-push). Each method has slightly different use cases and differ on how and where the container images are built. We'll explain each of the options in more detail below. If you are just starting out with {{$names.cloud.lower}}, we recommend using [{{$names.company.lower}} push](#balena-push).
 
-__Note:__ For a guide to getting started with the {{$names.company.lower}} CLI see the [{{$names.company.lower}} CLI masterclass][cli-masterclass]
+__Note:__ For a guide to getting started with {{ $names.cli.lower }} see the [{{ $names.cli.lower }} masterclass][cli-masterclass]
 
 ## {{$names.company.upper}} Push
 
 ### Overview
 
-`{{$names.company.lower}} push` is the recommended method for deployment and [development][local-mode] on the {{$names.cloud.lower}} platform. To use `{{$names.company.lower}} push` you need to first [install the {{$names.company.lower}} CLI][cli] and ensure you are logged in to your account with `{{$names.company.lower}} login`.
+`{{$names.company.lower}} push` is the recommended method for deployment and [development][local-mode] on the {{$names.cloud.lower}} platform. To use `{{$names.company.lower}} push` you need to first [install {{ $names.cli.lower }}][cli-install] and ensure you are logged in to your account with `{{$names.company.lower}} login`.
 
 When you run the  `{{$names.company.lower}} push <APP_NAME or DEVICE_IP>` command from your laptop it will essentially take your project (or repository) folder, compress it and send it to the [{{$names.cloud.lower}} build server](#the-balenacloud-build-server) or local {{$names.os.lower}} device in [localMode][local-mode] where it will be built.
 
@@ -289,6 +289,7 @@ Much like with the device list, [filters][filters] can be added to the release l
 [arm]:https://en.wikipedia.org/wiki/ARM_architecture
 [continuous-deployment]:https://en.wikipedia.org/wiki/Continuous_deployment
 [cli]:/reference/cli/#install-the-cli
+[cli-install]:{{ $links.githubCli }}/blob/master/INSTALL.md
 [cli-masterclass]:/learn/more/masterclasses/cli-masterclass/
 [development-image]:/reference/OS/overview/2.x/#dev-vs-prod-images
 [device-types]:/reference/base-images/devicetypes/
